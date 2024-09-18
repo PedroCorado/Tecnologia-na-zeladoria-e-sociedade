@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Problemas na Comunidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Problemas na Comunidade</h1>
+        <form id="formProblema" onsubmit="return validarFormulario()">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="rua">Nome da Rua:</label>
+            <input type="text" id="rua" name="rua" required>
+
+            <label for="numeroCasa">Número da Casa:</label>
+            <input type="text" id="numeroCasa" name="numeroCasa" required>
+
+            <label for="telefone">Número de Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <label for="problema">Problema Relatado:</label>
+            <textarea id="problema" name="problema" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
